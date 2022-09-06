@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+.background {
+  background: #4aa5ff;
+  padding: 50px 0;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+.d_flex {
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
+}
+.c_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f_flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.RText {
+  text-align-last: right;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+.row {
+  width: 50%;
+}
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #f3f5f9;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+.boxShadow {
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+
+/*---------category----------*/
+.contentWidth {
+  width: 77%;
+}
+.category {
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+  background-color: #fff;
+  width: 20%;
+  height: 250px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.category img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.category span {
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+.category .box {
+  transition: 0.5s;
+  padding: 0 30px;
+}
+.category .box:hover {
+  background-color: #ffe1e6;
+  cursor: pointer;
+}
+
+/*---------category----------*/
+.btn-primary {
+  background: #e94560;
+  padding: 10px 40px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+.top {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.mtop {
+  margin-top: 40px;
+}
+.heading i {
+  color: #e94560;
+  margin: 10px;
+}
+.discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e94560;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px;
+}
+/*---------product-----------*/
+.product {
+  background: #fff;
+  padding: 5px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px 10px #9ec7c7;
+  animation: mymove 5s infinite;
+  margin: 10px;
+}
+.product h3 {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+.product .rate i {
+  font-size: 15px;
+  color: #ffcd4e;
+  margin: auto;
+  margin-left: 115px;
+  margin-right: -95px;
+}
+.product .price {
+  display: flex;
+  justify-content: flex-end;
+  color: #e94560;
+}
+.price button {
+  background: none;
+  color: #e94560;
+  font-size: 20px;
+  transition: 0.5s;
+  border: 1px solid rgb(3 0 71 / 9%);
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  margin-left: 130px;
+  margin-top: -5px;
+}
+.price button:hover {
+  cursor: pointer;
+  background-color: #e94560;
+  color: #fff;
+}
+.product-like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.product-like label {
+  background-color: #0f3460;
+  padding: 1px 10px;
+  font-size: 12px;
+  color: white;
+  border-radius: 50px;
+}
+.product-like i {
+  font-size: 20px;
+  margin: 10px 3px;
+}
+.product:hover .product-like {
+  opacity: 1;
+}
+/*---------product-----------*/
+/*----- control btn -------*/
+.control-btn .next,
+.control-btn .prev {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  background: #0f3460;
+  border-radius: 50%;
+  transform: 0.5s;
+  z-index: 5;
+}
+.control-btn .prev {
+  left: -20px;
+}
+.control-btn .next {
+  right: -20px;
+}
+.control-btn .prev i,
+.control-btn .next i {
+  font-size: 20px;
+  transition: 0.5s;
+  color: #fff;
+}
+.control-btn .prev:hover,
+.control-btn .next:hover {
+  background: #e94560;
+  color: white;
+  cursor: pointer;
+}
+/*----- control btn -------*/
+/*----- heading -------*/
+.heading .heading-left i {
+  font-size: 30px;
+}
+.heading .heading-left h2 {
+  font-size: 25px;
+  margin: 5px;
+}
+.heading .heading-right i,
+.heading .heading-right {
+  text-align: right;
+  color: grey;
+}
+/*----- heading -------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+/*contact */
+.contact {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+.contact .leftSide {
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .rightSide {
+  height: 104%;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .rightSide h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+form input {
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form label {
+  margin-top: 15px;
+  color: grey;
+}
+
+form button {
+  margin-top: 40px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #121619;
+  color: whitesmoke;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*About*/
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTop {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutBottom p {
+  width: 1000px;
+}
+
+.about .aboutBottom h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+}
