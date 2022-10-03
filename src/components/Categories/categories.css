@@ -1,4 +1,5 @@
 /*Categories folder*/
+
 .row:first-child {
   margin-bottom: 20px;
   display: grid;
@@ -7,9 +8,12 @@
 }
 
 .title {
+  flex-direction: row-reverse;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-bottom: -10px;
+  margin-top: 10px;
 }
 
 .row:nth-child(5) {
@@ -18,13 +22,12 @@
 
 .row:nth-child(2) .col {
   padding: 0 50px;
-  align-self: center;
 }
 
 .row:nth-child(2) .col:first-child {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  margin-left: 1px;
 }
 
 .btn {
@@ -47,23 +50,19 @@
   flex: 1;
 }
 
-.cards {
-  margin-right: 80px;
-  margin-left: 600px;
-  margin-top: -200px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-}
-
 .card {
-  width: 150px;
-  height: fit-content;
+  width: 290px;
+  height: 420px;
   box-shadow: 0 0 10px #000000;
-  border-radius: 5px;
-  padding: flex;
-  margin: 0px 25px 25px 0;
-  margin-right: 5px;
+  border-radius: 7px;
+  padding: 7px;
+  position: relative;
+  border-radius: 8px;
+  margin: 9px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-right: -80px;
+  margin-left: 100px;
 }
 
 .card-header img {
@@ -73,9 +72,48 @@
 .titleProduct {
   text-align: center;
 }
-
 .price {
+  margin-left: 40%;
+}
+
+/*SearchFilter*/
+
+.templateContainer > .searchInput_Container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 0 auto;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+.templateContainer > .searchInput_Container input {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+}
+.templateContainer .template_Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  margin-left: 100%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-top: -32%;
+  align-items: center;
+  justify-content: center;
+}
+.templateContainer .template_Container .template {
+  background-color: white;
+  margin: 30px;
+  padding: 0px 20px;
+}
+.templateContainer .template_Container .template img {
+  height: 250px;
+}
+
+/*stars*/
+.i-rate {
+  text-align: center;
+  margin-top: -3px;
+  color: rgb(228, 224, 22);
 }

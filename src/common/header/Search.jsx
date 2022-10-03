@@ -11,12 +11,6 @@ const Search = ({ CartItem }) => {
     <>
       <section className="search">
         <div className="container c_flex">
-          <div className="search-box f_flex">
-            <i className="fa fa-search"></i>
-            <input type="text" placeholder="Search and hit Enter" />
-            <span>All Category</span>
-          </div>
-
           <div className="icon f_flex width">
             <Link to="/signup">
               <i className="fa fa-user icon-circle"></i>

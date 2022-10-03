@@ -24,16 +24,16 @@ const Data = {
     {
       id: 4,
       discount: 40,
-      cover: "./images/Shoes/LebronJames16.jpg",
-      name: "Lebron James 16",
-      price: 10000,
+      cover: "./images/Shoes/Infinity.jpg",
+      name: "Red Nike Cross",
+      price: 3200,
     },
     {
       id: 5,
       discount: 40,
-      cover: "./images/Shoes/Puma.jpg",
-      name: "Puma Lamelo",
-      price: 10000,
+      cover: "./images/Shoes/breaknet.jpg",
+      name: "Breaknet Adidas",
+      price: 5000,
     },
   ],
 };

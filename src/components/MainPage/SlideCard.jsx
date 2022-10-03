@@ -26,8 +26,8 @@ const SlideCard = () => {
                 <div className="left">
                   <h1>{value.title}</h1>
                   <p>{value.desc}</p>
-                  <Link to="/Buy" className="btn-primary">
-                    Visit Collections
+                  <Link to="/Buy">
+                    <button className="btn-primary">Visit Collections</button>
                   </Link>
                 </div>
                 <div className="right">

@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         <div className="container grid2">
           <div className="box">
-            <h1>SportWear</h1>
+            <h1>SportWear Classic.</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
               libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat

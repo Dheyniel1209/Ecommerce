@@ -10,16 +10,15 @@ import Sdata from "./components/Jersey/Sdata";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Buynow from "./components/Categories/Buynow";
+import Signup from "./components/SignupPage/Signup";
+import Register from "./components/SignupPage/Register";
 
 function App() {
   const { productItems } = Data;
   const { shopItems } = Sdata;
-
   const [CartItem, setCartItem] = useState([]);
-
   const addToCart = (product) => {
     const productExit = CartItem.find((item) => item.id === product.id);
-
     if (productExit) {
       setCartItem(
         CartItem.map((item) =>
@@ -32,7 +31,6 @@ function App() {
       setCartItem([...CartItem, { ...product, qty: 1 }]);
     }
   };
-
   const decreaseQty = (product) => {
     const productExit = CartItem.find((item) => item.id === product.id);
 
@@ -71,8 +69,10 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="/about" exact component={About} />
           <Route path="/Buy" exact component={Buynow} />
-        </Switch>
 
+          <Route path="/signup" exact component={Signup} />
+          <Route path="/register" exact component={Register} />
+        </Switch>
         <Footer />
       </Router>
     </>

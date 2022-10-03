@@ -45,7 +45,9 @@
 .grid1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 5px;
+  margin-top: 5px;
+  margin-bottom: -120px;
 }
 .shop .product img {
   width: 100%;
@@ -56,4 +58,19 @@
 }
 .shop .product:hover {
   box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+
+.searchInput_Container {
+  width: 20%;
+  align-self: center;
+  border: 3px solid rgba(0, 0, 0, 0.541);
+  border-radius: 20px;
+  text-align: left;
+  font-size: 40px;
+  opacity: 1;
+  padding: 1px 20px;
+  font-size: 17px;
+  margin-right: 200px;
+}
+.templateContainer {
 }

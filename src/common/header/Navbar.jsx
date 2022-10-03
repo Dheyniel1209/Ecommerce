@@ -19,6 +19,13 @@ const Navbar = () => {
                   HOME
                 </Link>
               </li>
+
+              <li>
+                <Link to="/Buy" activeStyle>
+                  STORE
+                </Link>
+              </li>
+
               <li>
                 <Link to="/about" activeStyle>
                   ABOUT

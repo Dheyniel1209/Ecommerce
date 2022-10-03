@@ -82,23 +82,12 @@
   border-bottom: 1px solid rgb(3 0 71 / 9%);
   padding-bottom: 10px;
   color: #e94560;
+  text-align: center;
 }
 .no-items {
   color: #e94560;
   font-size: 18px;
   margin-top: 30px;
   height: 130px;
-}
-._3Bh7nx {
-  flex-basis: 32.1875rem;
-  max-width: 32.1875rem;
-  flex-wrap: wrap;
-}
-
-.items-center {
-  align-items: center;
-}
-.flex,
-.h-center {
-  display: flex;
+  text-align: center;
 }
